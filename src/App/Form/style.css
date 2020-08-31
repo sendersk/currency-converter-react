@@ -2,6 +2,7 @@
     margin: auto;
     padding: 10px;
     text-align: center;
+    background: rgba(255,255,255,0.5);
 }
 .form__header {
     font-size: 40px;
