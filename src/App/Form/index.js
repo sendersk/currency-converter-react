@@ -49,8 +49,7 @@ export const Form = ({ calculateResult, result }) => {
         <button className="form__button">Przelicz!</button>
       </p>
       <p className="form__info">
-        Kursy pochodzą ze strony nbp.pl z Tabeli nr 156/A/NBP/2020 z dnia
-        2020-08-12
+        Kursy pochodzą ze strony nbp.pl z Tabeli nr 169/A/NBP/2020 z dnia 2020-08-31
       </p>
       <Result result={result} />
     </form>
