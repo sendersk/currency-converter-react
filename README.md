@@ -1,4 +1,47 @@
+# CURRENCY CONVERTER
+
+## Table of contents
+
+- [DEMO](#demo)
+- [Description](#description)
+- [Technologies used](#technologies-used)
+- [How to use](#how-to-use) 
+- [Available Scripts](#available-scripts)
+    - [npm start](#npm-start)
+    - [npm run build](#npm-run-build)
+    - [npm run eject](#npm-run-eject)
+
+## DEMO
+
+https://sendersk.github.io/currency-converter-react/
+## Description
+
+The website contains an easy form to convert currency. It allows you to instantly convert money from PLN to:
+
+- GBP
+- EUR
+- USD
+
+The currencies are based on the exchange rate of the day*.
+
+**Important! Rates are currently static.*
+
+## Technologies used: 
+
+- HTML
+- CSS
+- Javascript 
+- React.js
+- BEM convention
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+## How to use:
+
+1. Choose amount in PLN.
+2. Choose exchange currency.
+3. Click on **Przelicz** button.
+4. Check the result.
 
 ## Available Scripts
 
