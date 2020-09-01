@@ -1,5 +1,7 @@
 # CURRENCY CONVERTER
 
+![currencies_logo](https://user-images.githubusercontent.com/55362061/91882924-fac05100-ec83-11ea-810f-f9c99c91a959.png)
+
 ## Table of contents
 
 - [DEMO](#demo)
