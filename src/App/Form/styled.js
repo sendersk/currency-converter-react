@@ -8,7 +8,7 @@ export const LabelText = styled.span`
 `;
 
 export const Field = styled.input`
-    border: 2px solid #daad86;
+    border: 2px solid ${({ theme }) => theme.color.tumbleweed};
     border-radius: 5px;
     width: 100%;
     max-width: 350px;
@@ -19,8 +19,8 @@ export const Button = styled.button`
     font-size: 16px;
     font-weight: 700;
     width: 100%;
-    color: #fff;
-    background-color: #4c74ee;
+    color: ${({ theme }) => theme.color.white};
+    background-color: ${({ theme }) => theme.color.royalBlue};
     border-radius: 15px;
     border: none;
     padding: 10px;
@@ -38,7 +38,7 @@ export const Button = styled.button`
 export const Header = styled.h1`
     font-size: 40px;
     font-weight: 700;
-    color: #4c74ee;
+    color: ${({ theme }) => theme.color.royalBlue};
     border-radius: 15px;
     border: none;
     padding: 5px;
@@ -46,5 +46,5 @@ export const Header = styled.h1`
 
 export const Info = styled.p`
     font-size: 12px;
-    color: #333;
+    color: ${({ theme }) => theme.color.emperor};
 `;
