@@ -6,5 +6,5 @@ export const Wrapper = styled.div`
     padding: 40px;
     background: rgba(255,255,255,0.7);
     border-radius: 20px;
-    box-shadow: 0 0 30px #000; 
+    box-shadow: 0 0 30px ${({ theme }) => theme.color.black};; 
 `;
