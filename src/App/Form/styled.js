@@ -45,6 +45,14 @@ export const Header = styled.h1`
 `;
 
 export const Info = styled.p`
-    font-size: 12px;
+    text-align: center;
     color: ${({ theme }) => theme.color.emperor};
+`;
+
+export const Loading = styled.p`
+    color: ${({ theme }) => theme.color.royalBlue};
+`;
+
+export const Failure = styled.p`
+    color: ${({ theme }) => theme.color.crimson};
 `;
