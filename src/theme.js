@@ -6,5 +6,6 @@ export const theme = {
         white: "#fff",
         tumbleweed: "#daad86",
         royalBlue: "#4c74ee",
+        crimson: "#db143c",
     },
 };
