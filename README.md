@@ -7,6 +7,8 @@
 - [DEMO](#demo)
 - [Description](#description)
 - [Technologies used](#technologies-used)
+- [Methodologies used](#methodologies-used)
+- [API](#api)
 - [How to use](#how-to-use) 
 - [Available Scripts](#available-scripts)
     - [npm start](#npm-start)
@@ -18,25 +20,26 @@
 https://sendersk.github.io/currency-converter-react/
 ## Description
 
-The website contains an easy form to convert currency. It allows you to instantly convert money from PLN to:
-
-- GBP
-- EUR
-- USD
-
-The currencies are based on the exchange rate of the day*.
-
-**Important! Rates are currently static.*
+The website contains an easy form to convert currency. It allows you to instantly convert currencies based on the exchange rate of the day.
 
 ## Technologies used: 
 
-- HTML
-- CSS
-- Javascript 
 - React.js
-- BEM convention
+- create-react-app
+- HTML
+- JavaScript
+- Styled Components
+- Custom Hooks
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Methodologies used: 
+
+- JSX
+- Fetch API
+
+## API
+[http://exchangeratesapi.io/](http://exchangeratesapi.io/)
+
+Foreign exchange rates API with currency conversion Exchange rates API is a free service for current and historical foreign exchange rates published by the [European Central Bank](https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html)
 
 ## How to use:
 
