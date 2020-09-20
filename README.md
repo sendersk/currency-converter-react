@@ -18,25 +18,32 @@
 ## DEMO
 
 https://sendersk.github.io/currency-converter-react/
+
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
 ## Description
 
-The website contains an easy form to convert currency. It allows you to instantly convert currencies based on the exchange rate of the day.
+The website contains an easy form to convert currency. It allows you to instantly convert currencies based on the exchange rate of the day. In current version you can also toggle theme between light and dark.
 
 ## Technologies used: 
 
-- React.js
+- React
 - create-react-app
+- Redux with react-redux
 - HTML
-- JavaScript
+- CSS
+- JavaScript ES6+
 - Styled Components
-- Custom Hooks
 
 ## Methodologies used: 
 
 - JSX
+- Hooks
+- Custom Hooks
 - Fetch API
 
 ## API
+
 [http://exchangeratesapi.io/](http://exchangeratesapi.io/)
 
 Foreign exchange rates API with currency conversion Exchange rates API is a free service for current and historical foreign exchange rates published by the [European Central Bank](https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html)
@@ -45,8 +52,9 @@ Foreign exchange rates API with currency conversion Exchange rates API is a free
 
 1. Choose amount in PLN.
 2. Choose exchange currency.
-3. Click on **Przelicz** button.
+3. Click on **Result** button.
 4. Check the result.
+5. Click on **light theme/dark theme** button to toggle between themes.
 
 ## Available Scripts
 
