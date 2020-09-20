@@ -4,6 +4,7 @@
 
 ## Table of contents
 
+- [Live Preview](#live-preview)
 - [DEMO](#demo)
 - [Description](#description)
 - [Technologies used](#technologies-used)
@@ -14,6 +15,10 @@
     - [npm start](#npm-start)
     - [npm run build](#npm-run-build)
     - [npm run eject](#npm-run-eject)
+
+## Live Preview
+
+![currency converter demo](https://user-images.githubusercontent.com/55362061/93717105-e3ce9980-fb73-11ea-88f2-98eb1cb8cd69.gif)
 
 ## DEMO
 
