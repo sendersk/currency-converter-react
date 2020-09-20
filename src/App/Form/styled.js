@@ -5,10 +5,13 @@ export const LabelText = styled.span`
     max-width: 200px;
     display: inline-block;
     margin-right: 5px;
+    color: ${({theme}) => theme.color.labelColor};
+    font-size: 18px;
+    font-weight: bold;
 `;
 
 export const Field = styled.input`
-    border: 2px solid ${({ theme }) => theme.color.tumbleweed};
+    border: 2px solid ${({ theme }) => theme.color.border};
     border-radius: 5px;
     width: 100%;
     max-width: 350px;
@@ -19,8 +22,8 @@ export const Button = styled.button`
     font-size: 16px;
     font-weight: 700;
     width: 100%;
-    color: ${({ theme }) => theme.color.white};
-    background-color: ${({ theme }) => theme.color.royalBlue};
+    color: ${({ theme }) => theme.color.buttonColor};
+    background-color: ${({ theme }) => theme.color.mainColor};
     border-radius: 15px;
     border: none;
     padding: 10px;
@@ -38,7 +41,7 @@ export const Button = styled.button`
 export const Header = styled.h1`
     font-size: 40px;
     font-weight: 700;
-    color: ${({ theme }) => theme.color.royalBlue};
+    color: ${({ theme }) => theme.color.mainColor};
     border-radius: 15px;
     border: none;
     padding: 5px;
@@ -46,12 +49,12 @@ export const Header = styled.h1`
 
 export const Info = styled.p`
     text-align: center;
-    color: ${({ theme }) => theme.color.emperor};
+    color: ${({ theme }) => theme.color.infoColor};
 `;
 
 export const Link = styled.a`
     text-decoration: none;
-    color: #3f50b5;
+    color: ${({theme}) => theme.color.linkColor};
     font-weight: bold;
     font-style: italic;
 
@@ -65,9 +68,9 @@ export const Link = styled.a`
 `;
 
 export const Loading = styled.p`
-    color: ${({ theme }) => theme.color.royalBlue};
+    color: ${({ theme }) => theme.color.mainColor};
 `;
 
 export const Failure = styled.p`
-    color: ${({ theme }) => theme.color.crimson};
+    color: ${({ theme }) => theme.color.errorColor};
 `;
