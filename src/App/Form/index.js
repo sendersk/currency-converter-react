@@ -5,6 +5,7 @@ import {
   Field,
   Header,
   Info,
+  Link,
   LabelText,
   Loading,
   Failure,
@@ -35,27 +36,27 @@ export const Form = () => {
 
   return (
     <form onSubmit={onSubmit}>
-      <Header>Przelicznik walut</Header>
+      <Header>Currency converter</Header>
       {ratesData.state === "loading" ? (
         <Loading>
-          Sekundka...
+          Loading...
           <br />
-          Ładuję kursy walut z Europejskiego Banku Centralnego
+          Please wait. Exchange rates are currently loading from European Central Bank. 
         </Loading>
       ) : (
         ratesData.state === "error" ? (
           <Failure>
-            Hmm...coś poszło nie tak. Sprawdź, czy masz połączenie z internetem.
+            Unable receive data. Try again later.
           </Failure>
         ) : (
           <>
             <p>
               <label>
-                <LabelText>Kwota w zł*:</LabelText>
+                <LabelText>Amount:</LabelText>
                 <Field
                   value={amount}
                   onChange={({ target }) => setAmount(target.value)}
-                  placeholder="Wpisz kwotę w zł"
+                  placeholder="Please enter amount in PLN"
                   type="number"
                   required
                   step="0.01"
@@ -64,7 +65,7 @@ export const Form = () => {
             </p>
             <p>
               <label>
-                <LabelText>Waluta:</LabelText>
+                <LabelText>Currency:</LabelText>
                 <Field
                   as="select"
                   value={currency}
@@ -79,11 +80,25 @@ export const Form = () => {
               </label>
             </p>
             <p>
-              <Button>Przelicz!</Button>
+              <Button>Result</Button>
             </p>
-            <Info>
-              Kursy walut pobierane są z Europejskiego Banku Centralnego.
-              <br /> Aktualne na dzień <strong>{ratesData.date}</strong>
+            <Info variant="outlined" severity="info">
+              Exchange rates imported from 
+              {" "}
+              <Link
+                href="https://exchangeratesapi.io/"
+                target="__blank" rel="noopener noreferrer">
+                  https://exchangeratesapi.io/
+              </Link> based on data published by the 
+              {" "}
+              <Link 
+                href="https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html"
+                target="__blank" rel="noopener noreferrer">
+                  European Central Bank
+              </Link>
+              {" "}
+              from: 
+              <strong> {ratesData.date}</strong>
             </Info>
             <Result result={result} />
           </>

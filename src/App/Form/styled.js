@@ -49,6 +49,21 @@ export const Info = styled.p`
     color: ${({ theme }) => theme.color.emperor};
 `;
 
+export const Link = styled.a`
+    text-decoration: none;
+    color: #3f50b5;
+    font-weight: bold;
+    font-style: italic;
+
+    &:hover {
+        filter: brightness(110%);
+    }
+
+    &:active {
+        filter: brightness(120%);
+    }
+`;
+
 export const Loading = styled.p`
     color: ${({ theme }) => theme.color.royalBlue};
 `;

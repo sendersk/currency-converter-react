@@ -2,7 +2,7 @@ import React from "react";
 import { useCurrentDate } from "./useCurrentDate";
 import { Wrapper } from "./styled";
 
-const formatDate = (date) => date.toLocaleString(undefined, {
+const formatDate = (date) => date.toLocaleString("en-EN", {
     weekday: "long",
     hour: "2-digit",
     minute: "2-digit",
@@ -16,7 +16,7 @@ export const Clock = () => {
     
     return (
         <Wrapper>
-            Dzisiaj jest
+            Today is
             {" "}
             {formatDate(date)}
         </Wrapper>
